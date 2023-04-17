@@ -1,0 +1,220 @@
+.LandingBG{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: url('LandingBG.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-start;
+}
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.titulo{
+    font-size: 100px;
+    text-shadow: 1px 1px 2px black;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+.subtitulo{
+    font-size: 24px;
+    text-shadow: 1px 1px 2px black;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.subtitulo2{
+    font-size: 20px;
+    text-shadow: 1px 1px 2px black;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.derechos{
+    width: 100%;
+    position: absolute;
+    padding: 40px;
+    padding-bottom: 5px;
+    bottom: 0px;
+    transition: all 0.3s;
+}
+
+.texto-derechos{
+    font-size: 16px;
+}
+
+.text-resaltar{
+    color: #138700;
+    font-weight: 600;
+}
+
+.separador{
+    width: 60%;
+    height: 8px;
+    background-color: white;
+}
+
+.contenedorLanding{
+    margin: 20px;
+    padding: 20px;
+    max-width: 100%;
+}
+
+.ofertas{
+    margin-top: 50px;
+}
+
+.bg-black{
+    background-color: black;
+}
+.bg-green{
+    background-color: #103D00;
+}
+
+@media(max-width: 1025px){
+    .titulo{
+        font-size: 60px;
+        text-align: center;
+        text-shadow: 1px 1px 2px black;
+    }
+    .subtitulo{
+        font-size: 20px;
+        text-shadow: 1px 1px 2px black;
+    }
+    .subtitulo2{
+        font-size: 18px;
+        text-shadow: 1px 1px 2px black;
+    }
+    .texto-derechos{
+        font-size: 12px;
+    }
+    .LandingBG{
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+        background: url('LandingBG.png');
+        background-size: cover;
+        background-position: right 0px center;
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+
+@media(max-width: 768px){
+    .titulo{
+        font-size: 40px;
+        text-shadow: 1px 1px 2px black;
+    }
+    .subtitulo{
+        font-size: 14px;
+        text-shadow: 1px 1px 2px black;
+    }
+    .subtitulo2{
+        font-size: 12px;
+        text-shadow: 1px 1px 2px black;
+    }
+    .derechos{
+        width: 100%;
+        display: none;
+    }
+    .LandingBG{
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+        background: url('LandingBG.png');
+        background-size: cover;
+        background-position: right 0px center;
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+
+.chatbot{
+    width: 100%;
+    height: 100%;
+    background: rgb(221,221,221);
+    background: linear-gradient(90deg, rgba(221,221,221,0.44) 0%, rgba(199,255,198,1) 100%);
+}
+
+.mensaje{
+    position: relative;
+    bottom: 0px;
+    background-color: #353535;
+    height:60px;
+    width: 100%;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 360px;
+    width: 360px;
+    min-height: 100vh;
+}
+
+@media(max-width: 1000px){
+    #sidebar {
+        min-width: 250px;
+        max-width: 360px;
+        width: 250px;
+        min-height: 100vh;
+    }
+}
+
+a, a:hover, a:focus {
+    color: inherit;
+    text-decoration: none;
+}
+
+#sidebar {
+    /* don't forget to add all the previously mentioned styles here too */
+    background: #EDFFEF;
+    color: #000;
+    transition: all 0.3s;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #103D00;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #103D00;
+}
+
+#sidebar ul p {
+    color: #103D00;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: block;
+}
+#sidebar ul li a:hover {
+    color: #ffffff;
+    background: #a3c2a6;
+    transition: all 0.3s;
+}
+
+#sidebar ul li.active > a, a[aria-expanded="true"] {
+    color: #fff;
+    background: #e5ffe8;
+}
+ul ul a {
+    font-size: 0.9em !important;
+    font-weight: 600;
+    padding-left: 30px !important;
+    background: #e5ffe8;
+}
