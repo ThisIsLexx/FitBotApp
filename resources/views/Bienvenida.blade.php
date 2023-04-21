@@ -47,10 +47,10 @@
         <div class="contenedorLanding">
             <h1 class="text-uppercase font-weight-bold font-italic titulo text-light">Consigue tu físico <br><span>deseado con <span class="text-resaltar">Fit-Bot</span></span></h1>
             <p><div class="separador"></div></p>
-            <p class="text-light subtitulo">Con ayuda del servicio de asistente virtual que <span class="text-resaltar">Lets Fit</span> ofrece, puedes consultar diferentes funcionalidades, 
+            <p class="text-light subtitulo">Con ayuda del servicio de asistente virtual que <span class="text-resaltar">Fit-Bot</span> ofrece, puedes consultar diferentes funcionalidades, 
                                                         como información sobre la ejecución de los ejercicios.</p>
             <p class="text-resaltar subtitulo2">¿Porqué elegirnos?</p>
-            <p class="text-light subtitulo2">En Lets-Fit ofrecer una buena experiencia a nuestros deportistas es primero, por esto, nuestro servicio FIT-BOT
+            <p class="text-light subtitulo2">En Lets-Fit ofrecer una buena experiencia a nuestros deportistas es una prioridad, por esto, nuestro servicio FIT-BOT
                                             cuenta con diversas funciones:</p>
             <div class="ofertas">
                 <p class="text-resaltar subtitulo2">Calculadora IMC - <span class="text-light">FIT-BOT te ayudará a mantenerte al tanto sobre tus avances en tu indice de masa corporal.</span></p>

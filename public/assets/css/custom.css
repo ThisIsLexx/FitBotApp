@@ -14,7 +14,7 @@
 }
 
 .titulo{
-    font-size: 100px;
+    font-size: 90px;
     text-shadow: 1px 1px 2px black;
     font-weight: 600;
     transition: all 0.3s;
@@ -74,7 +74,7 @@
     background-color: #103D00;
 }
 
-@media(max-width: 1025px){
+@media(max-width: 1040px){
     .titulo{
         font-size: 60px;
         text-align: center;
@@ -139,12 +139,15 @@
     background: linear-gradient(90deg, rgba(221,221,221,0.44) 0%, rgba(199,255,198,1) 100%);
 }
 
-.mensaje{
-    position: relative;
-    bottom: 0px;
-    background-color: #353535;
-    height:60px;
-    width: 100%;
+.mensajeVacio{
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    align-self: center;
+    border-color: black;
+}
+.imagenMensajeVacio{
+    
 }
 
 .wrapper {
@@ -160,7 +163,7 @@
     min-height: 100vh;
 }
 
-@media(max-width: 1000px){
+@media(max-width: 1040px){
     #sidebar {
         min-width: 250px;
         max-width: 360px;
@@ -198,13 +201,13 @@ a, a:hover, a:focus {
 
 #sidebar ul li a {
     padding: 10px;
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: 600;
     display: block;
 }
 #sidebar ul li a:hover {
     color: #ffffff;
-    background: #a3c2a6;
+    background: #949994;
     transition: all 0.3s;
 }
 
@@ -217,4 +220,15 @@ ul ul a {
     font-weight: 600;
     padding-left: 30px !important;
     background: #e5ffe8;
+}
+
+.sombraHover:hover{
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.30);
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.30);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.30);
+    transition: all 0.5s;
+}
+.sombraHover{
+    transition: all 0.5s;
+    margin-top: 10px;
 }

@@ -42,12 +42,11 @@
                 </div>
             </nav>
         </div>
-
         <div class="wrapper">
             <!-- Sidebar -->
             <nav id="sidebar">
                 <div class="sidebar-header">
-                    <h5 class="text-light">Menú de funciones</h5>
+                    <h5 class="text-light center">Menú de funciones</h5>
                 </div>
         
                 <ul class="list-unstyled components">
@@ -71,8 +70,17 @@
                 </ul>
             </nav>
             <div class="container">
+                @if(sizeof($ejercicios) <= 0)
+                    <div class="mensajeVacio border rounded bg-danger text-light">
+                        Por el momento no existen registros sobre ejercicios!
+                    </div>
+                    <div class="imagenMensajeVacio">
+
+                    </div>
+                @endif
+
                 @foreach($ejercicios as $ejercicio)
-                    <div class="card-body">
+                    <div class="card-body border rounded sombraHover">
                         <h5 class="card-title">{{$ejercicio->nombreEjercicio}}</h5>
                         <div class="d-flex justify-content-between">
                             <p class="card-text">{{$ejercicio->infoEjercicio}}</p>
@@ -82,8 +90,8 @@
                 @endforeach
             </div>
         </div>
-
-
+        
+        
         <script src="{{asset('https://code.jquery.com/jquery-3.2.1.slim.min.js')}}" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="{{asset('https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js')}}" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="{{asset('https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js')}}" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
