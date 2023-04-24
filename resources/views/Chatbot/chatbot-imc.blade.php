@@ -69,6 +69,28 @@
                     </li>
                 </ul>
             </nav>
+            <div class="container">
+                <div class="container border rounded sombraHover">
+                    <form action="">
+                        <div class="form-row">
+                            <div class="col">
+                                <label for="">Edad</label>
+                                <input type="text" class="form-control">
+    
+                                <label for="">Estatura (Centimetros)</label>
+                                <input type="text" class="form-control">               
+                            
+                                <label for="">Peso</label>
+                                <input type="text" class="form-control">   
+                            </div>
+                            <div class="col">
+                                <p>Ingresa cada uno de los campos necesarios para calcular tu indice de masa corporal</p>
+                                <input type="submit" value="Enviar" class="btn btn-success center">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
 
         <script src="{{asset('https://code.jquery.com/jquery-3.2.1.slim.min.js')}}" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
