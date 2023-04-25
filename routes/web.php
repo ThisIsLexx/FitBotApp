@@ -34,3 +34,7 @@ Route::get('/Ajustes', function () {
 });
 
 Route::get('/Ejercicios', [EjercicioController::class, 'index']);
+
+Route::post('/IMC', [EjercicioController::class, 'IMC']);
+
+Route::post('/filtrar', [EjercicioController::class, 'filter']);

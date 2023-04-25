@@ -69,7 +69,8 @@
                     </li>
                 </ul>
             </nav>
-            <div class="container">
+            <div class="container overflow-auto">
+
                 @if(sizeof($ejercicios) <= 0)
                     <div class="mensajeVacio border rounded bg-danger text-light">
                         Por el momento no existen registros sobre ejercicios!
@@ -78,6 +79,35 @@
 
                     </div>
                 @endif
+
+                <br><br>
+                
+                @if(session('filtrado'))
+                    <div class="alert alert-success">
+                        Se encontraron los siguientes registros:
+                    </div>
+                @endif
+
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-3 col-md-4 col-ls-4">
+                            <h5 class="text-muted">Filtrado por categoria<span class="text-resaltar">{{$filter == null ? "" : " $filter"}}</span></h5>
+                        </div>
+                        <div class="col-sm-1 col-md-1 col-lg-3"></div>
+                        <div class="col-sm-3 col-md-2 col-lg-1">
+                            <a class="btn btn-link" href="/Ejercicios">X</a>
+                        </div>
+                        <div class="col-sm-5 col-md-4 col-lg-4">
+                            <form class="group-form d-flex" action="/filtrar" method="POST">
+                                @csrf
+                                <input type="text" name="filter" class="form-control">
+                                <input required class="btn btn-secondary" type="submit" value="Filtrar">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
 
                 @foreach($ejercicios as $ejercicio)
                     <div class="card-body border rounded sombraHover">

@@ -44,7 +44,7 @@
         </div>
         <div class="wrapper">
             <!-- Sidebar -->
-            <nav id="sidebar">
+            <nav id="sidebar" style="position: fixed;">
                 <div class="sidebar-header">
                     <h5 class="text-light">Menú de funciones</h5>
                 </div>
@@ -69,6 +69,13 @@
                     </li>
                 </ul>
             </nav>
+            <div class="container overflow-auto">
+                @for($i=0;$i<100;$i++)
+                <div class="alert alert-secondary">
+                    hola mundo
+                </div>
+                @endfor
+            </div>
         </div>
 
         <script src="{{asset('https://code.jquery.com/jquery-3.2.1.slim.min.js')}}" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

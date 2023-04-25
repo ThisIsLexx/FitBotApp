@@ -207,7 +207,7 @@ a, a:hover, a:focus {
 }
 #sidebar ul li a:hover {
     color: #ffffff;
-    background: #949994;
+    background: #a3c2a6;
     transition: all 0.3s;
 }
 
@@ -231,4 +231,47 @@ ul ul a {
 .sombraHover{
     transition: all 0.5s;
     margin-top: 10px;
+}
+
+.wrapCentrado{
+    height:100%;
+}
+
+.imagenIMC{
+    opacity: 0.2;
+}
+
+.centrado{
+    position:absolute;
+    bottom: 0px;
+    right: 0px;
+    transition: all 0.3s;
+}
+
+@media(max-width: 768px){
+    .centrado{
+        position:absolute;
+        bottom: 0px;
+        right: 0px;
+        left: 0px;
+    }
+    .wrapCentrado{
+        height:80px;
+    }
+
+    .imagenIMC{
+        position: fixed;
+        top: 600px;
+        opacity: 0.1;
+    }
+}
+
+.textoChatbot{
+    position: fixed;
+    padding: 10px;
+    width: 100%;
+    bottom: 0px;
+    right: 0px;
+    background-color: #103D00;
+    height:60px;
 }

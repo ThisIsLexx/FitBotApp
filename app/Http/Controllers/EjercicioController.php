@@ -16,8 +16,9 @@ class EjercicioController extends Controller
     {
         //
         $ejercicios = Ejercicio::all();
+        $filter = "";
 
-        return view('Chatbot.chatbot-ejercicios', compact('ejercicios'));
+        return view('Chatbot.chatbot-ejercicios', compact('ejercicios', 'filter'));
     }
 
     /**
@@ -84,5 +85,37 @@ class EjercicioController extends Controller
     public function destroy(Ejercicio $ejercicio)
     {
         //
+    }
+
+
+
+
+
+    public function IMC(Request $request){
+        $request->validate([
+            'edad' => 'required|numeric|integer|min:1|max:100',
+            'estatura' => 'required|numeric|integer|min:1|max:250',
+            'peso' => 'required|numeric',
+        ]);
+
+        $peso = $request->peso;
+        $estatura = $request->estatura;
+
+        $divisor = $estatura * $estatura;
+
+        $IMC = ($peso / $divisor) * 10000;
+
+        return redirect('/CalculadoraIMC')->with('success', 'Se han ingresado correctamente todos los campos')->with('IMC', $IMC)->with('peso', $peso)->with('estatura', $estatura);
+    }
+
+    public function filter(Request $request){
+        $request->validate([
+            'filter' =>'required',
+        ]);
+
+        $filter = $request->filter;
+        $ejercicios = Ejercicio::where('categoriaEjercicio', $request->filter)->get();
+
+        return view('/Chatbot.chatbot-ejercicios', compact('ejercicios', 'filter'))->with('filtrado', $filter);
     }
 }
