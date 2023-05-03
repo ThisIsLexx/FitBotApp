@@ -33,6 +33,10 @@ Route::get('/Ajustes', function () {
     return view('Chatbot.chatbot-ajustes');
 });
 
+Route::get('informacionSplits', function (){
+    return view('informacionSplits');
+});
+
 Route::get('/Ejercicios', [EjercicioController::class, 'index']);
 
 Route::post('/IMC', [EjercicioController::class, 'IMC']);

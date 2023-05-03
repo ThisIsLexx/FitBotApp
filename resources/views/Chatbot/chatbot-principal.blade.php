@@ -69,12 +69,27 @@
                     </li>
                 </ul>
             </nav>
-            <div class="container overflow-auto">
-                @for($i=0;$i<100;$i++)
+            <div class="container" style="padding: 20px; margin-left: 28%;">
+                @for($i=0;$i<10;$i++)
                 <div class="alert alert-secondary">
                     hola mundo
                 </div>
                 @endfor
+            </div>
+        </div>
+        <div class="floatMSG">
+            <div class="container row">
+                <form action="">
+                    @csrf
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" name="" placeholder="Enviar mensaje..." class="form-control">
+                        </div>
+                        <div class="col">
+                            <input type="submit" value="" class="btn btn-success">
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
 

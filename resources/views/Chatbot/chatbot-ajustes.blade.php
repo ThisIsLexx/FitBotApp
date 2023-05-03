@@ -69,6 +69,43 @@
                     </li>
                 </ul>
             </nav>
+            <div class="container" style="padding: 20px;">
+                <p class="text-left">
+                    Bienvenido a la ventana de ajustes. Dentro de este apartado, puedes configurar tus preferencias
+                    sobre la metodologia de ejercicios que planeas utilizar. Si deseas obtener información acerca de
+                    las opciones configurables, has click en el botón de ayuda que se encuentra en la parte inferior derecha
+                    de la pantalla.
+                </p>
+                <hr>
+                <div class="container border rounded sombraHover" style="padding: 20px;">
+                    <form action="">
+                        @csrf
+                        <div class="form-group">
+                            <label for="nombreBot">Nombre del asistente virtual</label>
+                            <input type="text" class="form-control" value="FitBot">
+                            <small id="passwordHelpBlock" class="form-text text-muted">
+                                Puedes ingresar un nombre a tu gusto si deseas llamar de otra manera a Fitbot, estos cambios
+                                solo se veran afectados solo para tu cuenta.
+                            </small>
+                            <hr>
+                            <div class="form-check">
+                                <input type="radio" value="PPL" id="split-1" name="split" class="form-check-input" checked>
+                                <label for="split-1" class="form-check-label">Split PPL</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" value="ARNOLD" name="split" class="form-check-input">
+                                <label for="split-2" class="form-check-label">Split ARNOLD</label>
+                            </div>
+                            
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div style=" margin: 10px; position: fixed; bottom:0px; right:0px;">
+                <form action="/informacionSplits" method="GET">
+                    <input type="submit" value="Ayuda sobre los split" class="btn btn-success">
+                </form>
+            </div>
         </div>
 
         <script src="{{asset('https://code.jquery.com/jquery-3.2.1.slim.min.js')}}" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

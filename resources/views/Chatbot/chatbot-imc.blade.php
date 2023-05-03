@@ -70,7 +70,7 @@
                 </ul>
             </nav>
             <div class="container" style="padding: 20px;">
-                <p class="text-left">Ingresa cada uno de los campos requeridos para poder calcular tu indice de masa corporal</p>
+                <p class="text-left">Ingrese cada uno de los campos requeridos para poder calcular su indice de masa corporal.</p>
                 
                 @if(session('success'))
                     <div class="alert alert-success alert-dismissible fade show">
