@@ -279,3 +279,7 @@ ul ul a {
 .floatMSG{
     position: fixed;
 }
+
+p{
+    text-align: justify;
+}

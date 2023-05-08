@@ -42,6 +42,90 @@
                 </ul>
             </div>
         </nav>
+        <div class="container">
+            <br>
+            <h1 class="subtitulo text-resaltar">¿Qué son los splits?</h1>
+            <hr>
+            <p>Los splits son una metodología de entrenamiento que consiste principalmente en trabajar uno o dos
+                grupos musculares durante cada sesión de entrenamiento. 
+            </p>
+        </div>
+        <div class="container">
+
+            
+            <div class="row sombraHover" style="background-color: #EDFFEF">
+                <div class="col">
+                    <img src="" alt="" class="">
+                </div>
+                <div class="col">
+                    <h3 class="subtitulo2 text-resaltar">Split PPL</h3>
+                    <p>El split PPL, toma como tal su nombre por las siglas Push, Pull, Leg, y sigue un orden
+                        de entrenamiento como su nombre lo menciona. Se trata del split de entrenamientos más
+                        utilizados por personas que entrenan regularmente.
+                    </p>
+                    <p>
+                        Este split normalmente se utiliza de la siguiente manera: <br>
+                        Lunes - Se entrenan Pectorales, Triceps y Deltoides. <br>
+                        Martes - Se entrena Espalda, Biceps y puede agregarse abdomen. <br>
+                        Miercoles - Se entrenan los musculos de la pierna, incluyendo Cuadriceps e Isquiotibiales. <br>
+                        Jueves - Se repite la secuencia de entrenamiento del día Lunes. <br>
+                        Viernes - Se repite la secuencia de entrenamiento del día Martes. <br>
+                        Sabado - Se repite la secuencia de entrenamiento del día Miercoles. <br>
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="row sombraHover">
+                <div class="col">
+                    <h3 class="subtitulo2 text-resaltar">Split Arnold</h3>
+                    <p>El split Arnold hace referencia a su metodología de entrenamiento siguiendo la organización
+                        semanal del fisicoculturista Arnold, esta metodología no es tan común, puesto que en ella se
+                        exhaustan los musculos grandes en un solo día, dando espacio a trabajar los musculos pequeños 
+                        como lo son el Biceps o Triceps de manera más eficiente.
+                    </p>
+                    <p>
+                        Este split normalmente se utiliza de la siguiente manera: <br>
+                        Lunes - Se entrenan pectorales, y espalda. <br>
+                        Martes - Se entrenan los tres grupos musculares pequeños, triceps, biceps y deltoides. <br>
+                        Miercoles - Se entrenan los musculos de la pierna, incluyendo Cuadriceps e Isquiotibiales. <br>
+                        Jueves - Se repite la secuencia de entrenamiento del día lunes. <br>
+                        Viernes - Se repite la secuencia de entrenamiento del día martes. <br>
+                        Sabado - Se repite la secuencia de entrenamiento del día miercoles. <br>
+                    </p>
+                </div>
+                <div class="col">
+
+                </div>
+            </div>
+            <hr>
+            <div class="row sombraHover" style="background-color: #EDFFEF">
+                <div class="col">
+
+                </div>
+                <div class="col">
+                    <h3 class="subtitulo2 text-resaltar">Split mixto</h3>
+                    <p>El split mixto toma ambas metodologías mencionadas anteriormente para combinarlas en
+                        una semana de entrenamientos más completa y exigente. Este metodo de organización es más
+                        recomendable para aquellos deportistas que ya tienen tiempo entrenando.
+                    </p>
+                    <p>
+                        Este split normalmente se utiliza de la siguiente manera: <br>
+                        Lunes - Se entrenan Pectorales, Triceps y Deltoides. <br>
+                        Martes - Se entrenan la Espalda y el Biceps. <br>
+                        Miercoles - Se entrenan los musculos de la pierna, incluyendo Cuadriceps e Isquiotibiales. <br>
+                        Jueves - Se entrenan Pectorales, y Espalda. <br>
+                        Viernes - Se entrenan los tres grupos musculares pequeños. <br>
+                        Sabado - Se repite la secuencia de entrenamiento del día miercoles. <br>
+                    </p>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div style=" margin: 10px; position: fixed; bottom:0px; right:0px;">
+            <form action="/Ajustes" method="GET">
+                <input type="submit" value="Volver a los Ajustes" class="btn btn-success">
+            </form>
+        </div>
     </div>
     
 
