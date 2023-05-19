@@ -51,21 +51,21 @@
         
                 <ul class="list-unstyled components">
                     <li>
-                        <a href="/EntrenadorVirtual">Fit-Bot</a>
+                        <a href="/EntrenadorVirtual"><img src="assets/img/entrenador.png" class="" style="width: 30px"> - Fit-Bot</a>
                     </li>
                     <li>
-                        <a href="/CalculadoraIMC">Calculadora IMC</a>
+                        <a href="/CalculadoraIMC"><img src="assets/img/imc.png" class="" style="width: 30px"> - Calculadora IMC</a>
                     </li>
                     <li>
-                        <a href="/Ejercicios" style="color: #ffffff; background: #a3c2a6;">Info. Ejercicios</a>
+                        <a href="/Ejercicios" style="color: #ffffff; background: #a3c2a6;"><img src="assets/img/ejercicio.png" class="" style="width: 30px"> - Info. Ejercicios</a>
                     </li>
                     <li>
-                        <a href="/Avances">Avances personales</a>
+                        <a href="/Avances"><img src="assets/img/metrica.png" class="" style="width: 30px"> - Avances personales</a>
                     </li>
                 </ul>
                 <ul class="list-unstyled components">
                     <li>
-                        <a href="/Ajustes">Ajustes</a>
+                        <a href="/Ajustes"><img src="assets/img/ajustes.png" class="" style="width: 30px"> - Ajustes</a>
                     </li>
                 </ul>
             </nav>

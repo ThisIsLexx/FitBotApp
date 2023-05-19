@@ -51,21 +51,21 @@
         
                 <ul class="list-unstyled components">
                     <li>
-                        <a href="/EntrenadorVirtual">Fit-Bot</a>
+                        <a href="/EntrenadorVirtual"><img src="assets/img/entrenador.png" class="" style="width: 30px"> - Fit-Bot</a>
                     </li>
                     <li>
-                        <a href="/CalculadoraIMC" style="color: #ffffff; background: #a3c2a6;">Calculadora IMC</a>
+                        <a href="/CalculadoraIMC" style="color: #ffffff; background: #a3c2a6;"><img src="assets/img/imc.png" class="" style="width: 30px"> - Calculadora IMC</a>
                     </li>
                     <li>
-                        <a href="/Ejercicios">Info. Ejercicios</a>
+                        <a href="/Ejercicios"><img src="assets/img/ejercicio.png" class="" style="width: 30px"> - Info. Ejercicios</a>
                     </li>
                     <li>
-                        <a href="/Avances">Avances personales</a>
+                        <a href="/Avances"><img src="assets/img/metrica.png" class="" style="width: 30px"> - Avances personales</a>
                     </li>
                 </ul>
                 <ul class="list-unstyled components">
                     <li>
-                        <a href="/Ajustes">Ajustes</a>
+                        <a href="/Ajustes"><img src="assets/img/ajustes.png" class="" style="width: 30px"> - Ajustes</a>
                     </li>
                 </ul>
             </nav>
@@ -137,7 +137,27 @@
                     <hr>
                     <p>Peso: {{session('peso')}} Kilogramos </p>
                     <p>Estatura: {{session('estatura')}} Centimetros </p>
-                    <p>Tu <span class="text-resaltar">indice de masa corporal</span> es: <span style="font-weight: 600;">{{session('IMC')}}</span></p>
+                    <p>Tu <span class="text-resaltar">indice de masa corporal</span> es: <span style="font-weight: 600;">{{$IMC = session('IMC')}}</span></p>
+                    @if($IMC < 18.5)
+                        <hr>
+                        <p>Tu indice de masa corporal se encuentra por <span style="font-weight: 600;">debajo del rango de peso suficiente.</span> El limite minimo para considerar que estas por debajo de un peso saludable
+                            es de 18.5 en resultados de IMC. <br> Como recomendación, puedes pedir asesorias con un nutriologo para mejorar tu alimentación, o ir directamente a algún
+                            centro de salud disponible en tu zona.</p>
+                    @elseif($IMC >= 18.5 && $IMC < 24.9)
+                        <p>Tu indice de masa corporal se encuentra <span style="font-weight: 600;">dentro del rango de peso saludable.</span> Los valores del rango de peso saludable son entre 18.5 y 24.9 en resultados de IMC.
+                            <br> Como recomendación, puedes realizar cualquier tipo de actividad física como ocio, puedes consultar a <a href="/EntrenadorVirtual" class="text-resaltar">FitBot</a></p>
+                    @elseif($IMC >= 25 && $IMC < 29.9)
+                        <p>Tu indice de masa corporal se encuentra <span style="font-weight: 600;">dentro del rango de sobrepeso.</span> Los valores de este rango de peso son entre 25 y 29.9
+                            dentro del indice de masa corporal. <br> Como recomendación, puedes realizar actividades físicas y asesorarte con un especialista de la salud para dar seguimiento
+                            a tu peso si así lo deseas.</p>
+                    @else
+                        <p>Tu indice de masa corporal se encuentra <span style="font-weight: 600;">dentro del rango de obesidad.</span> Los valores dentro de este rang ode peso son mayores a 30
+                            dentro del indice de masa corporal. <br> La obesidad es un tema de salud bastante complicado, y puede traer consigo consecuencias malas para tu salud fisica y mental.
+                            Como recomendación, puedes acudir a cualquier centro de salud cercano para atenderte con especialista, realizar actividades físicas no invasivas, y llevar a cabo un plan
+                            alimenticio.</p>
+                        <p>Algunas páginas con información referente a la obesidad: <br> <a href="https://www.cdc.gov/healthyweight/spanish/effects.html" class="text-resaltar">Efectos de la obesidad</a><br>
+                        <a href="https://www.cdc.gov/healthyweight/spanish/prevention/index.html" class="text-resaltar">Prevención de la obesidad</a></p>
+                    @endif
                 @endif
             </div>
         </div>

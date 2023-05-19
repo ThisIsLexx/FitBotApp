@@ -51,21 +51,21 @@
         
                 <ul class="list-unstyled components">
                     <li>
-                        <a href="/EntrenadorVirtual">Fit-Bot</a>
+                        <a href="/EntrenadorVirtual"><img src="assets/img/entrenador.png" class="" style="width: 30px"> - Fit-Bot</a>
                     </li>
                     <li>
-                        <a href="/CalculadoraIMC">Calculadora IMC</a>
+                        <a href="/CalculadoraIMC"><img src="assets/img/imc.png" class="" style="width: 30px"> - Calculadora IMC</a>
                     </li>
                     <li>
-                        <a href="/Ejercicios">Info. Ejercicios</a>
+                        <a href="/Ejercicios"><img src="assets/img/ejercicio.png" class="" style="width: 30px"> - Info. Ejercicios</a>
                     </li>
                     <li>
-                        <a href="/Avances">Avances personales</a>
+                        <a href="/Avances"><img src="assets/img/metrica.png" class="" style="width: 30px"> - Avances personales</a>
                     </li>
                 </ul>
                 <ul class="list-unstyled components">
                     <li>
-                        <a href="/Ajustes" style="color: #ffffff; background: #a3c2a6;">Ajustes</a>
+                        <a href="/Ajustes" style="color: #ffffff; background: #a3c2a6;"><img src="assets/img/ajustes.png" class="" style="width: 30px"> - Ajustes</a>
                     </li>
                 </ul>
             </nav>
@@ -96,8 +96,16 @@
                                 <input type="radio" value="ARNOLD" name="split" class="form-check-input">
                                 <label for="split-2" class="form-check-label">Split ARNOLD</label>
                             </div>
-                            
+                            <div class="form-check">
+                                <input type="radio" value="MIX" name="split" class="form-check-input">
+                                <label for="split-2" class="form-check-label">Split MIXTO</label>
+                            </div>
+                            <small id="passwordHelpBlock" class="form-text text-muted">
+                                El split seleccionado cambiara la forma en la que interactua el asistente virtual con respecto a sus respuestas dadas.
+                            </small>
                         </div>
+                        <hr>
+                        <input type="submit" value="Guardar cambios" class="btn btn-success">
                     </form>
                 </div>
             </div>

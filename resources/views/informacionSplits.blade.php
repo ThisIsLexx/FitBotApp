@@ -54,8 +54,8 @@
 
             
             <div class="row sombraHover" style="background-color: #EDFFEF">
-                <div class="col">
-                    <img src="" alt="" class="">
+                <div class="col" style="display: flex; align-items: center; justify-content: center;">
+                    <img src="assets/img/splits/ppl.png" class="img-fluid" alt="Responsive image">
                 </div>
                 <div class="col">
                     <h3 class="subtitulo2 text-resaltar">Split PPL</h3>
@@ -93,14 +93,14 @@
                         Sabado - Se repite la secuencia de entrenamiento del día miercoles. <br>
                     </p>
                 </div>
-                <div class="col">
-
+                <div class="col" style="display: flex; align-items: center; justify-content: center;">
+                    <img src="assets/img/splits/arnold.jpg" class="img-fluid" alt="Responsive image">
                 </div>
             </div>
             <hr>
             <div class="row sombraHover" style="background-color: #EDFFEF">
-                <div class="col">
-
+                <div class="col" style="display: flex; align-items: center; justify-content: center;">
+                    <img src="assets/img/splits/mix.jpg" class="img-fluid" alt="Responsive image">
                 </div>
                 <div class="col">
                     <h3 class="subtitulo2 text-resaltar">Split mixto</h3>
