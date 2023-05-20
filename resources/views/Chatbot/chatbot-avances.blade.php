@@ -69,6 +69,12 @@
                     </li>
                 </ul>
             </nav>
+            <div class="container" style="display: flex; align-items: center; justify-content: space-between">
+                <div class=""><h1>Ups! <br></h1></div>
+                <div class="container"><h3 class="text-muted">Al parecer la función de avances personales no ha sido agregada por el momento! Puedes visitar los otros enlaces
+                                                                para ver las funciones que LetsFit! puede ofrecer. <hr></h3></div>
+            </div>
+            
         </div>
 
         <script src="{{asset('https://code.jquery.com/jquery-3.2.1.slim.min.js')}}" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
