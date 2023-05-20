@@ -98,7 +98,7 @@
                             <div class="mensajeBot border rounded">
                                 <p>
                                     Hola! Mi nombre es Fitbot. Soy un asistente virtual creado por la empresa LetsFit<br>
-                                    para asistirte durante tu estancia en nuestra pagina web.
+                                    para asistirte durante tu estancia en nuestra pagina web. <br><br> Para comenzar, porfavor escribe la palabra hola.
                                 </p>
                                 <div class="mensajeHora">
                                     <span class="font-italic" style="font-size: 15px;">
@@ -112,13 +112,11 @@
                     <hr>    
                     <form id="chat-form" action="/EntrenadorVirtual" method="POST" class="form-inline align-items-center">
                         @csrf
-                        <input type="text" name="message" id="message" placeholder="Escribe un mensaje" class="form-control" style="width: 80%">
+                        <input type="text" name="message" id="message" placeholder="Escribe un mensaje" class="form-control" style="width: 80%" required>
                         <button type="submit" class="btn btn-success">Enviar Mensaje</button>
                     </form>
                 </div>
         </div>
-
-
         
         <script src="{{asset('https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js')}}" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="{{asset('https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js')}}" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

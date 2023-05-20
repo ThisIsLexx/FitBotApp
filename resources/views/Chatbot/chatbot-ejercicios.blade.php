@@ -108,7 +108,7 @@
                 <div class="overflowDiv">
                     @foreach($ejercicios as $ejercicio)
                         <div class="card-body border rounded sombraHover">
-                            <h5 class="card-title">{{$ejercicio->nombreEjercicio}}</h5>
+                            <h5 class="card-title">{{$ejercicio->nombreEjercicio}} - {{$ejercicio->calificacion}} - {{$ejercicio->categoriaEjercicio}}</h5>
                             <div class="d-flex justify-content-between">
                                 <p class="card-text">{{$ejercicio->infoEjercicio}}</p>    
                             </div>
