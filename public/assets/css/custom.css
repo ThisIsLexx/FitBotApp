@@ -293,18 +293,20 @@ p{
     -webkit-box-shadow: 7px 7px 0px 0px rgba(0,0,0,0.11);
     -moz-box-shadow: 7px 7px 0px 0px rgba(0,0,0,0.11);
     box-shadow: 7px 7px 0px 0px rgba(0,0,0,0.11);
-    
+    font-weight: 500;
 }
 
 .mensajeUsuario{
     background-color: #EDFFEF;
     padding: 10px;
     width: fit-content;
+    min-width: 150px;
     height: max-content;
     align-self: flex-end;
     -webkit-box-shadow: 7px 7px 0px 0px rgba(0,0,0,0.11);
     -moz-box-shadow: 7px 7px 0px 0px rgba(0,0,0,0.11);
     box-shadow: 7px 7px 0px 0px rgba(0,0,0,0.11);
+    font-weight: 500;
 }
 
 .mensajeHora{
@@ -318,3 +320,9 @@ p{
     padding-top: 30px;
     overflow-y: auto;
 }
+
+.separador {
+    padding: 10px;
+    visibility: hidden;
+    margin-bottom: 10px;
+  }

@@ -17,7 +17,7 @@
         <div class="sticky-top">
             <nav class="navbar navbar-expand-lg navbar-dark bg-black justify-content-between" style="filter: drop-shadow(0px -2px 10px #000);">
                     <a class="navbar-brand text-light" href="/">
-                    <img src="" width="70" height="auto" class="d-inline-block align-top" alt="">
+                    <img src="assets/img/logo.png" width="30" height="auto" class="d-inline-block align-top" alt="">
                         Lets Fit!
                     </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,13 +30,10 @@
                             <a href="/" class="nav-link">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a href="/EntrenadorVirtual" class="nav-link text-success">Entrenador Virtual</a>
+                            <a href="/EntrenadorVirtual" class="nav-link">Entrenador Virtual</a>
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link">Iniciar Sesión</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="" class="nav-link">Registrarte</a>
+                            <a href="/Ejercicios" class="nav-link text-success">Funciones</a>
                         </li>
                     </ul>
                 </div>
@@ -71,10 +68,9 @@
             </nav>
             <div class="container" style="display: flex; align-items: center; justify-content: space-between">
                 <div class=""><h1>Ups! <br></h1></div>
-                <div class="container"><h3 class="text-muted">Al parecer la función de avances personales no ha sido agregada por el momento! Puedes visitar los otros enlaces
+                <div class="container"><h3 class="text-muted" style="text-align: justify;">Al parecer la función de avances personales no ha sido agregada por el momento! Puedes visitar los otros enlaces
                                                                 para ver las funciones que LetsFit! puede ofrecer. <hr></h3></div>
             </div>
-            
         </div>
 
         <script src="{{asset('https://code.jquery.com/jquery-3.2.1.slim.min.js')}}" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

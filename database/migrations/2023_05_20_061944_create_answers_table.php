@@ -13,12 +13,10 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('ejercicios', function (Blueprint $table) {
+        Schema::create('answers', function (Blueprint $table) {
             $table->id();
-            $table->string("nombreEjercicio");
-            $table->string("infoEjercicio");
-            $table->string("categoriaEjercicio");
-            $table->integer("calificacion")->default(null);
+            $table->string('pregunta');
+            $table->string('respuesta');
         });
     }
 
@@ -29,6 +27,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('ejercicios');
+        Schema::dropIfExists('answers');
     }
 };

@@ -17,7 +17,7 @@
         <div class="sticky-top">
             <nav class="navbar navbar-expand-lg navbar-dark bg-black justify-content-between" style="filter: drop-shadow(0px -2px 10px #000);">
                     <a class="navbar-brand text-light" href="/">
-                    <img src="" width="70" height="auto" class="d-inline-block align-top" alt="">
+                    <img src="assets/img/logo.png" width="30" height="auto" class="d-inline-block align-top" alt="">
                         Lets Fit!
                     </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,13 +30,10 @@
                             <a href="/" class="nav-link">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a href="/EntrenadorVirtual" class="nav-link text-success">Entrenador Virtual</a>
+                            <a href="/EntrenadorVirtual" class="nav-link">Entrenador Virtual</a>
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link">Iniciar Sesión</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="" class="nav-link">Registrarte</a>
+                            <a href="/Ejercicios" class="nav-link text-success">Funciones</a>
                         </li>
                     </ul>
                 </div>

@@ -46,11 +46,14 @@
 
             function handleResponse(response) {
                 var chatbox = $('#chatbox');
-                const hora = new Date();
-                chatbox.append('<div class="mensajeUsuario"><p>' + response.userMessage + '</p>' + '<div class="mensajeHora">'  + '</div></div>');
-                chatbox.append('<div class="mensajeBot"><p>' + response.response + '</p>' + '<div class="mensajeHora">' + '</div></div>');
-                $('#message').val('');
+                chatbox.append('<div class="separador"></div><div class="mensajeUsuario"><p>' + response.userMessage + '</p>' + '<div class="mensajeHora">' + "<span class='font-italic' style='font-size: 15px;'>" + response.hora + '</span></div></div>');
 
+                setTimeout(function() {
+                    chatbox.append('<div class="separador"></div><div class="mensajeBot"><p>' + response.response + '</p>' + '<div class="mensajeHora">' + "<span class='font-italic' style='font-size: 15px;'>" + response.hora + '</span></div></div>');
+                }, 500); // Espera de 500 milisegundos (0.5 segundos)
+
+                $('#message').val('');
+                
                 // Ajustar la posición de desplazamiento hacia abajo
                 setTimeout(function() {
                     chatbox.scrollTop(chatbox.prop("scrollHeight"));
@@ -58,12 +61,13 @@
             }
         });
     </script>
+
 </head>
-    <body>
+    <body style="background: linear-gradient(90deg, rgba(106,145,19,0.1) 0%, rgba(20,21,23,0.1) 100%);">
         <div class="sticky-top">
             <nav class="navbar navbar-expand-lg navbar-dark bg-black justify-content-between" style="filter: drop-shadow(0px -2px 10px #000);">
                     <a class="navbar-brand text-light" href="/">
-                    <img src="" width="70" height="auto" class="d-inline-block align-top" alt="">
+                    <img src="assets/img/logo.png" width="30" height="auto" class="d-inline-block align-top" alt="">
                         Lets Fit!
                     </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -79,10 +83,7 @@
                             <a href="/EntrenadorVirtual" class="nav-link text-success">Entrenador Virtual</a>
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link">Iniciar Sesión</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="" class="nav-link">Registrarte</a>
+                            <a href="/Ejercicios" class="nav-link">Funciones</a>
                         </li>
                     </ul>
                 </div>

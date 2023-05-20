@@ -18,7 +18,7 @@
     <div class="sticky-top">
         <nav class="navbar navbar-expand-lg navbar-dark bg-black justify-content-between">
                 <a class="navbar-brand text-light" href="/">
-                <img src="" width="70" height="auto" class="d-inline-block align-top" alt="">
+                <img src="assets/img/logo.png" width="30" height="auto" class="d-inline-block align-top" alt="">
                     Lets Fit!
                 </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,16 +28,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a href="/" class="nav-link text-success">Inicio</a>
+                        <a href="/" class="nav-link">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a href="/EntrenadorVirtual" class="nav-link">Entrenador Virtual</a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link">Iniciar Sesión</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link">Registrarte</a>
+                        <a href="/Ejercicios" class="nav-link text-success">Funciones</a>
                     </li>
                 </ul>
             </div>
@@ -46,7 +43,7 @@
             <br>
             <h1 class="subtitulo text-resaltar">¿Qué son los splits?</h1>
             <hr>
-            <p>Los splits son una metodología de entrenamiento que consiste principalmente en trabajar uno o dos
+            <p style="text-align: justify;">Los splits son una metodología de entrenamiento que consiste principalmente en trabajar uno o dos
                 grupos musculares durante cada sesión de entrenamiento. 
             </p>
         </div>
@@ -58,12 +55,12 @@
                     <img src="assets/img/splits/ppl.png" class="img-fluid" alt="Responsive image">
                 </div>
                 <div class="col">
-                    <h3 class="subtitulo2 text-resaltar">Split PPL</h3>
-                    <p>El split PPL, toma como tal su nombre por las siglas Push, Pull, Leg, y sigue un orden
+                    <h3 class="subtitulo2 text-resaltar" style="text-align: justify;">Split PPL</h3>
+                    <p style="text-align: justify;">El split PPL, toma como tal su nombre por las siglas Push, Pull, Leg, y sigue un orden
                         de entrenamiento como su nombre lo menciona. Se trata del split de entrenamientos más
                         utilizados por personas que entrenan regularmente.
                     </p>
-                    <p>
+                    <p style="text-align: justify;">
                         Este split normalmente se utiliza de la siguiente manera: <br>
                         Lunes - Se entrenan Pectorales, Triceps y Deltoides. <br>
                         Martes - Se entrena Espalda, Biceps y puede agregarse abdomen. <br>
@@ -77,13 +74,13 @@
             <hr>
             <div class="row sombraHover">
                 <div class="col">
-                    <h3 class="subtitulo2 text-resaltar">Split Arnold</h3>
-                    <p>El split Arnold hace referencia a su metodología de entrenamiento siguiendo la organización
+                    <h3 class="subtitulo2 text-resaltar" style="text-align: justify;">Split Arnold</h3>
+                    <p style="text-align: justify;">El split Arnold hace referencia a su metodología de entrenamiento siguiendo la organización
                         semanal del fisicoculturista Arnold, esta metodología no es tan común, puesto que en ella se
                         exhaustan los musculos grandes en un solo día, dando espacio a trabajar los musculos pequeños 
                         como lo son el Biceps o Triceps de manera más eficiente.
                     </p>
-                    <p>
+                    <p style="text-align: justify;">
                         Este split normalmente se utiliza de la siguiente manera: <br>
                         Lunes - Se entrenan pectorales, y espalda. <br>
                         Martes - Se entrenan los tres grupos musculares pequeños, triceps, biceps y deltoides. <br>
@@ -103,12 +100,12 @@
                     <img src="assets/img/splits/mix.jpg" class="img-fluid" alt="Responsive image">
                 </div>
                 <div class="col">
-                    <h3 class="subtitulo2 text-resaltar">Split mixto</h3>
-                    <p>El split mixto toma ambas metodologías mencionadas anteriormente para combinarlas en
+                    <h3 class="subtitulo2 text-resaltar" style="text-align: justify;">Split mixto</h3>
+                    <p style="text-align: justify;">El split mixto toma ambas metodologías mencionadas anteriormente para combinarlas en
                         una semana de entrenamientos más completa y exigente. Este metodo de organización es más
                         recomendable para aquellos deportistas que ya tienen tiempo entrenando.
                     </p>
-                    <p>
+                    <p style="text-align: justify;">
                         Este split normalmente se utiliza de la siguiente manera: <br>
                         Lunes - Se entrenan Pectorales, Triceps y Deltoides. <br>
                         Martes - Se entrenan la Espalda y el Biceps. <br>

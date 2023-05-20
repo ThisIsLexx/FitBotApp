@@ -18,7 +18,7 @@
     <div class="sticky-top">
         <nav class="navbar navbar-expand-lg navbar-dark bg-black justify-content-between">
                 <a class="navbar-brand text-light" href="/">
-                <img src="" width="70" height="auto" class="d-inline-block align-top" alt="">
+                <img src="assets/img/logo.png" width="30" height="auto" class="d-inline-block align-top" alt="">
                     Lets Fit!
                 </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,10 +34,7 @@
                         <a href="/EntrenadorVirtual" class="nav-link">Entrenador Virtual</a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link">Iniciar Sesión</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link">Registrarte</a>
+                        <a href="/Ejercicios" class="nav-link">Funciones</a>
                     </li>
                 </ul>
             </div>
@@ -55,7 +52,7 @@
             <div class="ofertas">
                 <p class="text-resaltar subtitulo2">Calculadora IMC - <span class="text-light">FIT-BOT te ayudará a mantenerte al tanto sobre tus avances en tu indice de masa corporal.</span></p>
                 <p class="text-resaltar subtitulo2">Ejecución de ejercicios - <span class="text-light">FIT-BOT puede instruirte en la ejecución de los ejercicios para tu rutina.</span></p>
-                <p class="text-resaltar subtitulo2">Registro de avances - <span class="text-light">FIT-BOT  </span></p>
+                <p class="text-resaltar subtitulo2">Registro de avances - <span class="text-light">FIT-BOT te permite almacenar todos tus avances dentro de su apartado de funciones. </span></p>
                 <p class="text-resaltar subtitulo2">Recomendación de rutinas - <span class="text-light">FIT-BOT  te proporcionará rutinas de entrenamiento tomando en cuenta los contenidos que hayas valorado positivamente</span></p>
             </div>
         </div>

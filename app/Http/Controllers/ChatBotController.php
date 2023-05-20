@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class ChatBotController extends Controller
 {
@@ -13,11 +14,22 @@ class ChatBotController extends Controller
 
     public function handleChatbot(Request $request)
     {
-        $message = $request->input('message');
+        $mensaje = $request->message;
 
-        // Lógica de tu chatbot
-        $response = 'Respuesta del chatbot';
+        $message = strtolower($mensaje);
+        
+        if ($message === "ejercicios") {
 
-        return response()->json(['response' => $response, 'userMessage' => $message]);
+        }
+
+        $currentTime = now()->format("H:i");
+
+        $response = DB::table('answers')->where('pregunta', 'like', $message)->value('respuesta');
+
+        if ($response === null) {
+            $response = "Lo siento, por el momento no cuento con una respuesta para eso!";
+        }
+        
+        return response()->json(['response' => $response, 'userMessage' => $mensaje, 'hora' => $currentTime]);
     }
 }

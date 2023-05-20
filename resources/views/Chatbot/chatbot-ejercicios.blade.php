@@ -17,7 +17,7 @@
         <div class="sticky-top">
             <nav class="navbar navbar-expand-lg navbar-dark bg-black justify-content-between" style="filter: drop-shadow(0px -2px 10px #000);">
                     <a class="navbar-brand text-light" href="/">
-                    <img src="" width="70" height="auto" class="d-inline-block align-top" alt="">
+                    <img src="assets/img/logo.png" width="30" height="auto" class="d-inline-block align-top" alt="">
                         Lets Fit!
                     </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,13 +30,10 @@
                             <a href="/" class="nav-link">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a href="/EntrenadorVirtual" class="nav-link text-success">Entrenador Virtual</a>
+                            <a href="/EntrenadorVirtual" class="nav-link">Entrenador Virtual</a>
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link">Iniciar Sesión</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="" class="nav-link">Registrarte</a>
+                            <a href="/Ejercicios" class="nav-link text-success">Funciones</a>
                         </li>
                     </ul>
                 </div>
@@ -75,9 +72,6 @@
                     <div class="mensajeVacio border rounded bg-danger text-light">
                         Por el momento no existen registros sobre ejercicios!
                     </div>
-                    <div class="imagenMensajeVacio">
-
-                    </div>
                 @endif
 
                 <br><br>
@@ -108,16 +102,19 @@
                 </div>
 
                 <hr>
-
-                @foreach($ejercicios as $ejercicio)
-                    <div class="card-body border rounded sombraHover">
-                        <h5 class="card-title">{{$ejercicio->nombreEjercicio}}</h5>
-                        <div class="d-flex justify-content-between">
-                            <p class="card-text">{{$ejercicio->infoEjercicio}}</p>
-                            <p class="card-text mr-4 text-resaltar">Categoria: {{$ejercicio->categoriaEjercicio}}</p>
+                <small id="passwordHelpBlock" class="form-text text-muted">
+                    Para el filtrado, puedes ingresar cualquiera de las siguientes categorias: hombro, pecho, triceps, biceps, pierna, espalda
+                </small>
+                <div class="overflowDiv">
+                    @foreach($ejercicios as $ejercicio)
+                        <div class="card-body border rounded sombraHover">
+                            <h5 class="card-title">{{$ejercicio->nombreEjercicio}}</h5>
+                            <div class="d-flex justify-content-between">
+                                <p class="card-text">{{$ejercicio->infoEjercicio}}</p>    
+                            </div>
                         </div>
-                    </div>
-                @endforeach
+                    @endforeach
+                </div>
             </div>
         </div>
         
