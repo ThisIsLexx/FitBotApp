@@ -63,7 +63,7 @@
     </script>
 
 </head>
-    <body style="background: linear-gradient(90deg, rgba(106,145,19,0.1) 0%, rgba(20,21,23,0.1) 100%);">
+    <body style="background: linear-gradient(90deg, rgba(106,145,19,0.2) 0%, rgba(20,21,23,0.2) 100%);">
         <div class="sticky-top">
             <nav class="navbar navbar-expand-lg navbar-dark bg-black justify-content-between" style="filter: drop-shadow(0px -2px 10px #000);">
                     <a class="navbar-brand text-light" href="/">

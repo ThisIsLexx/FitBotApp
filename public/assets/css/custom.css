@@ -288,6 +288,7 @@ p{
     background-color: #a3c2a6;
     padding: 10px;
     width:fit-content;
+    max-width: 750px;
     height: max-content;
     align-self: flex-start;
     -webkit-box-shadow: 7px 7px 0px 0px rgba(0,0,0,0.11);

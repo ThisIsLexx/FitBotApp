@@ -45,3 +45,5 @@ Route::post('/filtrar', [EjercicioController::class, 'filter']);
 
 Route::get('EntrenadorVirtual', [ChatBotController::class, 'showChatbot']);
 Route::post('EntrenadorVirtual', [ChatBotController::class, 'handleChatbot']);
+
+Route::get('Algoritmo', [ChatBotController::class, 'matrizPonderada']);
